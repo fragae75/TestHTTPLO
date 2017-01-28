@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/Franck/workspace/HTTP/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Franck/workspace/HTTP/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Franck/workspace/HTTP/httpclient-cache-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Franck/workspace/HTTP/httpclient-win-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Franck/workspace/HTTP/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Franck/workspace/HTTP/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Franck/workspace/HTTP/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Franck/workspace/HTTP/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Franck/workspace/HTTP/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Franck/workspace/HTTP/fluent-hc-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Franck/workspace/JSON/java-json-j.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
