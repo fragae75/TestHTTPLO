@@ -10,18 +10,20 @@ import java.nio.channels.FileChannel;
 
 public class CleLiveObjectsAPI  {
 	static String sAPIKey = "";
+	final static String DEFAULT_KEY = "cle.txt";
 	
 	/*
 	 * Récupère une clé d'API depuis le fichier cle.txt
 	 * 
 	 */
-	public static void GetAPIKeyFromFile(){
+	public static String GetAPIKey(String sKeyFile){
 		FileInputStream fis;
 	    FileChannel fc;
 	
+	    sAPIKey = "Vide => "+sKeyFile;
 	    try {
 	      //Création d'un nouveau flux de fichier
-	      fis = new FileInputStream(new File("cle.txt"));
+	      fis = new FileInputStream(new File(sKeyFile));
 	      //On récupère le canal
 	      fc = fis.getChannel();
 	      //On en déduit la taille
@@ -43,17 +45,20 @@ public class CleLiveObjectsAPI  {
 	      sAPIKey = new String(tabByte);
 	      
 	      System.out.println("Fichier cle.txt : " + sAPIKey);
+	      return sAPIKey;
 	      
 	    } catch (FileNotFoundException e) {
 	      e.printStackTrace();
+	      return sAPIKey;
 	    } catch (IOException e) {
 	      e.printStackTrace();
+	      return sAPIKey;
 	    }
 	}
 
 	public static String GetAPIKey()
 	{
-		GetAPIKeyFromFile();
+		GetAPIKey(DEFAULT_KEY);
 		return sAPIKey;
 	}
 }
